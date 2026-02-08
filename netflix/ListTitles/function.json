@@ -1,0 +1,7 @@
+{
+  "bindings": [
+    { "authLevel": "function", "type": "httpTrigger", "direction": "in", "methods": ["get"], "name": "req" },
+    { "type": "cosmosDB", "direction": "in", "name": "inputDocuments", "databaseName": "NetflixDB", "containerName": "Catalogo", "sqlQuery": "SELECT * FROM c", "connection": "CosmosDBConnection" },
+    { "type": "http", "direction": "out", "name": "res" }
+  ]
+}
